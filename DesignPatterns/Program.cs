@@ -244,3 +244,16 @@ namespace FactoryPatternExample
 //      you add it once —in the factory—
 //      instead of everywhere in the codebase."
 // ============================================================================
+//Client
+//  │
+//  ▼
+//NotificationFactory  ←────── Abstract "Creator"
+//   │
+//   ├── EmailNotificationFactory   ←── Concrete Creator
+//   └── SMSNotificationFactory     ←── Concrete Creator
+//        │
+//        ▼
+//     INotification               ←── Product Interface
+//        │
+//        ├── EmailNotification     ←── Concrete Product
+//        └── SMSNotification       ←── Concrete Product
